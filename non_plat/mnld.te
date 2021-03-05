@@ -101,3 +101,8 @@ allow mnld atci_service:unix_dgram_socket sendto;
 allow mnld sysfs_boot_mode:file { read open };
 
 set_prop(mnld, vendor_radio_prop);
+
+# Allow mnld to read cmdline
+allow mnld proc_cmdline:file r_file_perms;
+allow mnld sysfs_dt_firmware_android:dir r_dir_perms;
+allow mnld sysfs_dt_firmware_android:file r_file_perms;

@@ -71,3 +71,7 @@ get_prop(mtk_agpsd,mtk_gps_support_prop)
 
 # Allow to manage wakelocks
 wakelock_use(mtk_agpsd)
+
+# Allow mtk_agpsd to search for ccci sysfs dir
+allow mtk_agpsd sysfs_ccci:dir search;
+allow mtk_agpsd sysfs_ccci:file r_file_perms;
