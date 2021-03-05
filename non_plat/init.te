@@ -159,3 +159,6 @@ allow init ccci_device:chr_file rw_file_perms;
 
 # wod
 allow init socket_device:sock_file create_file_perms;
+
+# volte
+allow init init:netlink_xfrm_socket { bind create nlmsg_read read write };

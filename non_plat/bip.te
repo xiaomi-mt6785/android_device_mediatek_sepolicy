@@ -3,6 +3,7 @@ type bip_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(bip)
 
+allow bip bip:netlink_route_socket { bind create nlmsg_read read write };
 allow bip self:netlink_route_socket read;
 allow bip self:tcp_socket { create_socket_perms listen accept };
 allow bip self:udp_socket create_socket_perms;
