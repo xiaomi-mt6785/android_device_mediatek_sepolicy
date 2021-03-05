@@ -225,6 +225,7 @@ allow mtk_hal_camera untrusted_app:dir search;
 allow mtk_hal_camera offloadservice_device:chr_file rw_file_perms;
 
 ## Purpose: for camera middleware dump image buffer to sdcard & audio frameworks dump
+allow mtk_hal_camera storage_file:dir search;
 allow mtk_hal_camera storage_file:lnk_file {read write};
 allow mtk_hal_camera mnt_user_file:dir {write read search};
 allow mtk_hal_camera mnt_user_file:lnk_file {read write};
@@ -372,3 +373,18 @@ allow mtk_hal_camera teei_client_device:chr_file rw_file_perms;
 # MTK camera render property
 get_prop(mtk_hal_camera, render_prop)
 set_prop(mtk_hal_camera, render_prop)
+
+# Persist data files
+allow mtk_hal_camera persist_data_file:file r_file_perms;
+allow mtk_hal_camera persist_data_file:dir r_dir_perms;
+
+# Mounted vendor files
+allow mtk_hal_camera mnt_vendor_file:file r_file_perms;
+allow mtk_hal_camera mnt_vendor_file:dir r_dir_perms;
+
+# SysFS EMI ctrl
+allow mtk_hal_camera sysfs_emi_ctrl:dir r_dir_perms;
+allow mtk_hal_camera sysfs_emi_ctrl:file rw_file_perms;
+
+# SUB2AF
+allow mtk_hal_camera SUB2AF_device:chr_file rw_file_perms;

@@ -288,3 +288,6 @@ type ut_keymaster_device, dev_type;
 # VPU
 type vpud_device, dev_type;
 type vcu_device, dev_type;
+
+# SUB2AF
+type SUB2AF_device, dev_type;

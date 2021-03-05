@@ -744,3 +744,9 @@
 
 # netdagent
 /vendor/bin/netdagent u:object_r:netdagent_exec:s0
+
+# SUB2AF
+/dev/SUB2AF(/.*)? u:object_r:SUB2AF_device:s0
+
+# EMI ctrl
+/sys/bus/platform/drivers/emi_ctrl(/.*)? u:object_r:sysfs_emi_ctrl:s0

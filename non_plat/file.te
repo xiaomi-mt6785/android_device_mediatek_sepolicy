@@ -452,3 +452,6 @@ type volte_ua_socket, file_type;
 type volte_imcb_socket, file_type;
 type wfca_socket, file_type;
 type volte_imsvt1_socket, file_type;
+
+# SysFS EMI ctrl
+type sysfs_emi_ctrl, sysfs_type, fs_type;
