@@ -20,3 +20,12 @@ allow volte_imcb {
 }:sock_file write;
 
 set_prop(volte_imcb, mtk_volte_prop)
+
+allow volte_imcb volte_imcb:capability { setuid setgid };
+allow volte_imcb volte_imcb:capability2 wake_alarm;
+allow volte_imcb device:dir rw_dir_perms;
+allow volte_imcb device:lnk_file create;
+allow volte_imcb devpts:chr_file setattr;
+allow volte_imcb sysfs_ccci:dir search;
+allow volte_imcb sysfs_ccci:file r_file_perms;
+allow volte_imcb ccci_device:chr_file rw_file_perms;
