@@ -386,3 +386,6 @@ persist.vendor.gba u:object_r:vendor_ims_xcap_prop:s0
 persist.vendor.radio.ss.mode u:object_r:vendor_ims_xcap_prop:s0
 persist.vendor.radio.ss.xrdm u:object_r:vendor_ims_xcap_prop:s0
 persist.vendor.radio.xcap.cfn u:object_r:vendor_ims_xcap_prop:s0
+
+# Netdagent
+vendor.net.rndis.client u:object_r:netdagent_prop:s0

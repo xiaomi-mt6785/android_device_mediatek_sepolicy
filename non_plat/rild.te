@@ -167,3 +167,7 @@ get_prop(rild, mtk_wfc_serv_prop)
 # Operation: RILD init flow
 # Purpose: To handle illegal rild started
 set_prop(rild, gsm0710muxd_prop)
+
+# Allow rild access binder to nvram_agent_binder
+allow rild nvram_agent_binder:binder call;
+allow rild nvram_agent_binder_hwservice:hwservice_manager find;

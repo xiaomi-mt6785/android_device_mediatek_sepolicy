@@ -51,3 +51,6 @@ r_dir_file(system_app, sysfs_switch);
 
 # Neuralnetwork
 allow system_app mtk_hal_neuralnetworks:binder { call transfer };
+
+# Allow PermissionControl use mtk_hal_netdagent_hwservice
+hal_client_domain(system_app,mtk_hal_netdagent)

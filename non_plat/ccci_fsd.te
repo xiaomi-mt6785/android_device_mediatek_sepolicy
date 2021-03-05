@@ -67,3 +67,6 @@ allow ccci_fsd ccci_data_md1_file:dir create_dir_perms;
 allow ccci_fsd ccci_data_md1_file:file create_file_perms;
 allow ccci_fsd sysfs_mmcblk:dir search;
 allow ccci_fsd sysfs_mmcblk:file { read getattr open };
+
+# ccci_fsd nvcfg files
+allow ccci_fsd nvcfg_file:dir search;

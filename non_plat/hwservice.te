@@ -70,3 +70,6 @@ type mtk_hal_keyinstall_hwservice, hwservice_manager_type;
 
 # DFPS
 type mtk_hal_dfps_hwservice, hwservice_manager_type;
+
+# Netdagent
+type mtk_hal_netdagent_hwservice, hwservice_manager_type;

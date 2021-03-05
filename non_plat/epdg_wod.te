@@ -24,3 +24,6 @@ allow epdg_wod device:lnk_file create;
 
 set_prop(epdg_wod, mtk_wod_prop)
 set_prop(epdg_wod, persist_wod_prop)
+
+allow epdg_wod vendor_data_file:dir rw_dir_perms;
+allow epdg_wod vendor_data_file:file { create rw_file_perms };

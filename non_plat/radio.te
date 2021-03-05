@@ -234,3 +234,10 @@ allow radio debugfs_regmap:dir { search };
 # Date : 2018/09/29
 # Purpose : Allow get USB Current Speed in Engineer Mode
 get_prop(radio, vendor_usb_prop);
+
+# Allow EM use mtk_hal_netdagent_hwservice
+hal_client_domain(radio, mtk_hal_netdagent)
+
+# for radio to call nvram hal
+allow radio nvram_agent_binder:binder call;
+allow radio nvram_agent_binder_hwservice:hwservice_manager find;

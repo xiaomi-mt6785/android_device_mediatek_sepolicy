@@ -62,6 +62,8 @@ allow meta_tst nvdata_file:file create_file_perms;
 allow meta_tst nvram_device:chr_file rw_file_perms;
 allow meta_tst nvram_device:blk_file rw_file_perms;
 allow meta_tst nvdata_device:blk_file rw_file_perms;
+allow meta_tst nvram_agent_binder_hwservice:hwservice_manager find;
+allow meta_tst nvram_agent_binder:binder call;
 
 # Date: WK14.47
 # Operation : Migration

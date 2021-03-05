@@ -91,3 +91,8 @@ attribute mtk_hal_bgs_server;
 attribute hal_dfps;
 attribute hal_dfps_client;
 attribute hal_dfps_server;
+
+# Netdagent HIDL
+attribute mtk_hal_netdagent;
+attribute mtk_hal_netdagent_client;
+attribute mtk_hal_netdagent_server;
