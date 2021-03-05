@@ -389,3 +389,13 @@ persist.vendor.radio.xcap.cfn u:object_r:vendor_ims_xcap_prop:s0
 
 # Netdagent
 vendor.net.rndis.client u:object_r:netdagent_prop:s0
+
+# RenderThread
+ro.vendor.globalpq.       u:object_r:render_prop:s0
+persist.vendor.dp.        u:object_r:render_prop:s0
+vendor.dp.                u:object_r:render_prop:s0
+
+# OMX
+mtk.vendor.omx.core.log          u:object_r:omx_core_prop:s0
+ro.mtk_crossmount_support        u:object_r:mtk_crossmount_support_prop:s0
+ro.mtk_deinterlace_support       u:object_r:mtk_deinterlace_support_prop:s0

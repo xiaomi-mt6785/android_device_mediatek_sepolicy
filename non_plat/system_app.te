@@ -54,3 +54,9 @@ allow system_app mtk_hal_neuralnetworks:binder { call transfer };
 
 # Allow PermissionControl use mtk_hal_netdagent_hwservice
 hal_client_domain(system_app,mtk_hal_netdagent)
+
+# RenderThread
+get_prop(system_app, render_prop)
+
+# MTK PQ
+allow system_app mtk_hal_pq_hwservice:hwservice_manager find;

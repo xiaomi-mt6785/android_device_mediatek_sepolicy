@@ -128,3 +128,6 @@ binder_call(mtk_hal_camera, platform_app)
 
 # Neuralnetwork
 allow platform_app mtk_hal_neuralnetworks:binder { call transfer };
+
+# RenderThread
+get_prop(platform_app, render_prop)

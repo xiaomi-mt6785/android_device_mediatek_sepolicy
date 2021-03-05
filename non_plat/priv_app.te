@@ -1,0 +1,2 @@
+# RenderThread
+get_prop(priv_app, render_prop)

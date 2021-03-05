@@ -85,3 +85,6 @@ get_prop(surfaceflinger, graphics_hwc_hdr_prop)
 
 # DFPS
 hal_client_domain(surfaceflinger, hal_dfps)
+
+# RenderThread
+get_prop(surfaceflinger, render_prop)

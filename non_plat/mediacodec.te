@@ -160,3 +160,11 @@ allow mediacodec sysfs_concurrency_scenario:dir search;
 
 # TEE
 allow mediacodec teei_client_device:chr_file rw_file_perms;
+
+# RenderThread
+get_prop(mediacodec, render_prop)
+
+# OMX
+get_prop(mediacodec, omx_core_prop)
+get_prop(mediacodec, mtk_crossmount_support_prop)
+get_prop(mediacodec, mtk_deinterlace_support_prop)

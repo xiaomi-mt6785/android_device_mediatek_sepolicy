@@ -346,3 +346,11 @@ type vendor_ims_xcap_prop, property_type, extended_core_property_type;
 
 # Netdagent
 type netdagent_prop, property_type, mtk_core_property_type;
+
+# Render
+type render_prop, property_type;
+
+# OMX
+type omx_core_prop, property_type;
+type mtk_crossmount_support_prop, property_type;
+type mtk_deinterlace_support_prop, property_type;
