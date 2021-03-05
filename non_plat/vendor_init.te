@@ -88,3 +88,6 @@ set_prop(vendor_init, mtk_camera_prop)
 
 #  MTK DSBP property
 set_prop(vendor_init, mtk_dsbp_support_prop)
+
+# Unlink for VoLTE
+allow vendor_init device:lnk_file unlink;
