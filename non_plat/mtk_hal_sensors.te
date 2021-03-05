@@ -29,6 +29,8 @@ allow mtk_hal_sensors system_file:dir open;
 # sensors input rw access
 allow mtk_hal_sensors sysfs_sensor:dir r_dir_perms;
 allow mtk_hal_sensors sysfs_sensor:file rw_file_perms;
+allow mtk_hal_sensors sysfs_scp:dir r_dir_perms;
+allow mtk_hal_sensors sysfs_scp:file rw_file_perms;
 
 # hal sensor for chr_file
 allow mtk_hal_sensors hwmsensor_device:chr_file r_file_perms;
